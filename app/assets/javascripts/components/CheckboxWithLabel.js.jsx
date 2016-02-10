@@ -16,6 +16,12 @@
     onChange: function(e) {
       this.setState({checked: !this.state.checked })
     },
+    makeList: function() {
+      var list = ["ben", "duncan", "rob"];
+      return list.map(function(item, index) {
+        return <li key={index}>{item}</li>
+      })
+    },
     render: function() {
       return (
         <div>
@@ -23,6 +29,9 @@
             onChange={this.onChange}
             checked={this.state.checked}></input>
           { this.state.checked ? this.props.onLabel : this.props.offLabel }
+          <ul>
+            {this.makeList()}
+          </ul>
         </div>
       )
     }
