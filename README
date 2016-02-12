@@ -1,0 +1,16 @@
+A basic react-rails app boilerplate to be used as the basis for other react-rails apps.
+Includes:
+ - cucumber
+ - rspec
+ - slim
+ - react-rails
+ - jest
+ 
+To run your react tests:
+npm test
+
+To run all the other tests:
+rake
+
+To start the app:
+rails s
